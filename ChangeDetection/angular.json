@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "first-project": {
+    "ChangeDetection": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/first-project",
+            "outputPath": "dist/change-detection",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "first-project:build:production"
+              "buildTarget": "ChangeDetection:build:production"
             },
             "development": {
-              "buildTarget": "first-project:build:development"
+              "buildTarget": "ChangeDetection:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -99,6 +99,6 @@
     }
   },
   "cli": {
-    "analytics": "60048365-005f-4bf4-a1a8-9aab26056447"
+    "analytics": "424aaf77-3a4b-41d8-ad0c-b1074456b25f"
   }
 }
